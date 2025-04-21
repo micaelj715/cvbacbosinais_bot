@@ -1,6 +1,6 @@
 services:
-  - type: web
+  - type: worker
     name: vfs-bot
     runtime: python
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
