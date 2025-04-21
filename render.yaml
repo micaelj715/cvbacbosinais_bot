@@ -1,6 +1,12 @@
 services:
-  - type: worker
+  - type: web
     name: vfs-bot
-    runtime: python
+    env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: "7325319031:AAGz6fpflit6-6QYX4PQ3gSfmzjoauPvWhs"
+      - key: CHAT_ID
+        value: "5193079733"
+
