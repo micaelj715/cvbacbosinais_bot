@@ -3,7 +3,7 @@ services:
     name: vfs-bot
     env: python
     buildCommand: pip install -r requirements.tx
-    startCommand: startCommand: ./venv/bin/python bot.py
+   startCommand: ./venv/bin/python bot.py
     envVars:
       - key: BOT_TOKEN
         value: "7325319031:AAGz6fpflit6-6QYX4PQ3gSfmzjoauPvWhs"
