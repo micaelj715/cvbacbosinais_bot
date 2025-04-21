@@ -1,12 +1,6 @@
 services:
   - type: web
-    name: bacbo-bot
-    env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
-    envVars:
-      - key: BOT_TOKEN
-        value: seu_token_aqui
-      - key: CHAT_ID
-        value: seu_chat_id_aqui
+    name: vfs-bot
+    runtime: python
+    buildCommand: ""
+    startCommand: python bot.py
