@@ -1,0 +1,11 @@
+# Ignora a pasta de ambientes virtuais
+venv/
+__pycache__/
+
+# Ignora arquivos de dependências Python
+*.pyc
+*.pyo
+
+# Ignora pastas do sistema
+.DS_Store
+*.log
